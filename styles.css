@@ -1,0 +1,188 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body, body > * {
+    box-sizing: border-box;
+}
+
+.fullscreen {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.body {
+    height: 74%;
+    width: 14.5%;
+    background-color: rgb(23, 30, 39);
+    border-radius: 23px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    transform: scale(.85);
+}
+
+.screen-wrapper, .keypad {
+    flex-grow: 1;
+}
+
+.screen-wrapper {
+    background-color: rgb(6, 14, 22);
+    border-radius: 18px;
+    margin-bottom: 8px;
+    display: flex;
+    flex-direction: column;
+    max-height: 53%;
+    padding: 0 26px;
+    padding-bottom: 6px;
+}
+
+.speaker-wrapper {
+    padding: 10px 0;
+    margin-top: 18px;
+}
+
+.speaker {
+    width: 28%;
+    height: 5px;
+    margin: auto;
+    border-radius: 6px;
+    background-color: rgb(88, 82, 82);
+}
+
+.name {
+    font-size: .585rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(214, 209, 209);
+    text-align: end;
+}
+
+.screen {
+    flex-grow: 1;
+    background-color: rgb(83, 76, 76);
+    margin: 0 3px;
+    margin-bottom: 7px;
+}
+
+.company-name {
+    font-size: .925rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color: rgb(214, 209, 209);
+    text-align: center;
+    letter-spacing: 3.5px;
+}
+
+.keypad {
+    display: flex;
+    flex-direction: column;
+}
+
+.keypad .upper {
+    flex-basis: 33%;
+    padding: 5px 0;
+    padding-top: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.keypad .lower {
+    flex-basis: 67%;
+    display: flex;
+    flex-direction: column;
+}
+
+.keycolumn {
+    flex-basis: 23.6666%;
+    background-color: rgb(6, 14, 22);
+}
+
+.keycolumn.one {
+    border-radius: 15px 10px 10px 15px;
+}
+
+.keycolumn.one, .keycolumn.three {
+    display: flex;
+    align-items: center;
+}
+
+.keycolumn.two {
+    flex-basis: 35.6666%;
+    border: 6px solid rgb(217, 255, 47);
+    border-radius: 26px;
+}
+
+.keycolumn.three {
+    border-radius: 10px 15px 15px 10px;
+}
+
+.marker {
+    background-color: rgb(217, 255, 47);
+    width: 5px;
+    height: 45%;
+}
+
+.marker.l {
+    border-radius: 0 10px 10px 0;
+}
+
+.marker.r {
+    border-radius: 10px 0 0 10px;
+}
+
+.actions {
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    flex-direction: column;
+}
+
+.actions .btn {
+    flex-grow: 1;
+}
+
+.keyrow {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    flex-basis: 29.6666%;
+    position: relative;
+    background-color: rgb(6, 14, 22);
+    height: 75%;
+    border-radius: 8px;
+}
+
+.button.te {
+    border-bottom-left-radius: 15px;
+}
+
+.button.tw {
+    border-bottom-right-radius: 15px;
+}
+
+.button span {
+    position: absolute;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(214, 209, 209);
+    font-size: .925rem;
+    top: 10%;
+    bottom: 10%;
+    left: 24%;
+}
+
+.button span sub {
+    position: relative;
+    top: -4px;
+    font-size: .425rem;
+    vertical-align: text-bottom;
+}
